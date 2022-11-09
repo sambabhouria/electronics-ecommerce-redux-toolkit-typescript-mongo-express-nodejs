@@ -8,6 +8,7 @@ import { getProducts } from '../features/products/productListSlice';
 
 const HomePage = () => {
   const dispatch = useAppDispatch();
+  useAppSelector((state) => state.productList)
   const { products, loading } = useAppSelector((state) => state.productList);
 
   useEffect(() => {
