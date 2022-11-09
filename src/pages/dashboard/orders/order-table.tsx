@@ -6,7 +6,7 @@ import DashboardLayout from '../../../components/layouts/dashboard-layout';
 import Loader from '../../../components/UI/loader';
 import TableContainer from '../../../components/UI/table-contrainer';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
-import { getOrdersList } from '../../../features/orders/slice-list';
+import { getOrdersList } from '../../../features/orders/listSlice';
 import authAxios from '../../../utils/auth-axios';
 import { setError } from '../../../utils/error';
 import { formatCurrencry, getDate } from '../../../utils/helper';

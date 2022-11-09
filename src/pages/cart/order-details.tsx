@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import DefaultLayout from '../../components/layouts/default-layout';
 import Loader from '../../components/UI/loader';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { getOrderById } from '../../features/orders/order-details';
+import { getOrderById } from '../../features/orders/orderDetailSlice';
 import { formatCurrencry } from '../../utils/helper';
 import Stripe from 'react-stripe-checkout';
 import authAxios from '../../utils/auth-axios';
@@ -12,6 +12,7 @@ import toast from 'react-hot-toast';
 import { setError } from '../../utils/error';
 
 const OrderDetails = () => {
+  const STRIPE_SECRET_KEY =  process.env.REACT_APP_STRIPE_SECRET_KEY;
   const { order, loading } = useAppSelector((state) => state.orderDetail);
   const dispatch = useAppDispatch();
   const { id } = useParams();
@@ -134,7 +135,7 @@ const OrderDetails = () => {
                           )}`}
                           name='Type Shop'
                           image='/LogoMakr-6Tit9e.png'
-                          stripeKey={import.meta.env.VITE_API_STRIPE}
+                          stripeKey={STRIPE_SECRET_KEY}
                           token={tokenHandler}
                         />
                       </ListGroup.Item>

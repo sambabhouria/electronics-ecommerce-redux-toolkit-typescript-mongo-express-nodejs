@@ -13,7 +13,7 @@ import DefaultLayout from '../components/layouts/default-layout';
 import ProductCard from '../components/product-card';
 import Paginate from '../components/UI/paginate';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { getFilterProducts } from '../features/products/search-list';
+import { getFilterProducts } from '../features/products/productFilterSlice';
 
 const Products = () => {
   const params = useParams();

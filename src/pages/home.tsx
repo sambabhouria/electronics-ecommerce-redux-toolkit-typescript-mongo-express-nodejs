@@ -4,7 +4,7 @@ import DefaultLayout from '../components/layouts/default-layout';
 import ProductCard from '../components/product-card';
 import Loader from '../components/UI/loader';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { getProducts } from '../features/products/slice-list';
+import { getProducts } from '../features/products/productListSlice';
 
 const HomePage = () => {
   const dispatch = useAppDispatch();

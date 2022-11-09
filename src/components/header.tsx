@@ -1,8 +1,8 @@
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../redux';
-import { reset } from '../redux/cart/cart-slice';
-import { userLogout } from '../redux/users/login-slice';
+import { useAppDispatch, useAppSelector } from '../app/hooks';
+import { reset } from '../features/cart/cartSlice';
+import { userLogout } from '../features/users/loginSlice';
 
 const Header = () => {
   const { userInfo } = useAppSelector((state) => state.login);
@@ -30,14 +30,14 @@ const Header = () => {
                 className='navbar-sm-brand text-light text-sm text-decoration-none'
                 href='mailto:info@company.com'
               >
-                typeshop@me.com
+                sambabhouria@gmail.com
               </a>
               <i className='fa text-sm  fa-phone mx-2'></i>
               <a
                 className='navbar-sm-brand text-sm  text-light text-decoration-none'
                 href='tel:010-020-0340'
               >
-                06 76 56 48 93
+                06 78 32 90 35
               </a>
             </div>
             <div>

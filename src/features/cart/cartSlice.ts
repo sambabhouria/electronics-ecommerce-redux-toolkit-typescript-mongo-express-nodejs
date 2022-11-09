@@ -20,12 +20,12 @@ export const cartSlice = createSlice({
     addToCart: (state: CartSliceState, action: PayloadAction<Product>) => {
       const product = action.payload;
       const exist = state.cartItems.find(
-        (item: any) => item._id == product._id
+        (item: any) => item._id === product._id
       );
 
       if (exist) {
         state.cartItems = state.cartItems.map((item: any) =>
-          item._id == product._id ? { ...product, qty: item.qty + 1 } : item
+          item._id === product._id ? { ...product, qty: item.qty + 1 } : item
         );
       } else {
         state.cartItems = [...state.cartItems, { ...product, qty: 1 }];
@@ -34,7 +34,7 @@ export const cartSlice = createSlice({
     removeFromCart: (state: CartSliceState, action: PayloadAction<Product>) => {
       const product = action.payload;
       const exist = state.cartItems.find(
-        (item: any) => item._id == product._id
+        (item: any) => item._id === product._id
       );
 
       if (exist && exist.qty === 1) {
@@ -43,7 +43,7 @@ export const cartSlice = createSlice({
         );
       } else {
         state.cartItems = state.cartItems.map((item: any) =>
-          item._id == product._id ? { ...product, qty: item.qty - 1 } : item
+          item._id === product._id ? { ...product, qty: item.qty - 1 } : item
         );
       }
     },

@@ -11,7 +11,10 @@ const CURRENCRY_FORMATTER = new Intl.NumberFormat(undefined, {
     return new Date(date).toLocaleDateString('en');
   };
 
-  export const baseUrl =
-    import.meta.env.VITE_MODE === 'development'
-      ? 'http://localhost:5000'
-      : 'http://lienServerDeDeveloppement';
+  // console.log('REACT_APP_VITE_MODE', import.meta.env.VITE_MODE);
+
+  // process.env.REACT_APP_VERSION === 'development'
+  //     ? 'http://localhost:5000'
+  //     : 'http://lienServerDeDeveloppement';
+
+  export const baseUrl = 'http://localhost:5000'

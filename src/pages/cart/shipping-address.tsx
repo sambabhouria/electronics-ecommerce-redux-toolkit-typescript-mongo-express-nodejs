@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import FormContainer from '../../components/UI/form-container';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { saveAddress } from '../../features/cart/cart-slice';
+import { saveAddress } from '../../features/cart/cartSlice';
 import { AddressTypes } from '../../utils/interfaces';
 
 const ShippingAddress = () => {

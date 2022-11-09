@@ -3,8 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { HiUsers } from 'react-icons/hi';
 import { AiFillDashboard } from 'react-icons/ai';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { reset } from '../../features/cart/cart-slice';
-import { userLogout } from '../../features/users/login-slice';
+import { reset } from '../../features/cart/cartSlice';
+import { userLogout } from '../../features/users/loginSlice';
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {

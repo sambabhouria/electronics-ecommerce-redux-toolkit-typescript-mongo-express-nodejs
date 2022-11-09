@@ -13,7 +13,7 @@ import {
   import DefaultLayout from '../../components/layouts/default-layout';
   import Message from '../../components/UI/message';
   import { useAppDispatch, useAppSelector } from '../../app/hooks';
-  import { addToCart, removeFromCart } from '../../features/cart/cart-slice';
+  import { addToCart, removeFromCart } from '../../features/cart/cartSlice';
   import { formatCurrencry } from '../../utils/helper';
   
   const CartPage = () => {

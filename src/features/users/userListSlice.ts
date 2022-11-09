@@ -22,7 +22,7 @@ export const getUsersList = createAsyncThunk('users/list', async () => {
     if (res.data) {
       return res.data;
     }
-  } catch (error) {
+  } catch (error: any) {
     const message = setError(error);
     toast.error(message);
   }

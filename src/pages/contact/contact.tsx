@@ -13,9 +13,9 @@ const Contact = () => {
           <div className='section-title'>
             <h2 className='text-center'>Contact</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Il faut beaucoup de peine pour en profiter. Ses besoins résultent de quelque chose qui le fait fuir.
+              Laissez-les être ce qu'ils veulent. N'importe qui que n'importe qui désire.
+              Et personne qui gêne ne reçoit les autres.
             </p>
           </div>
           <Row data-aos='fade-up' data-aos-delay={100}>
@@ -25,7 +25,7 @@ const Contact = () => {
                   <div className='info-box bg-white'>
                     <i className='bx bx-map' />
                     <h3>Our Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>6 Alllée Georges Braque Créteil</p>
                   </div>
                 </Col>
                 <Col md={6}>
@@ -33,7 +33,7 @@ const Contact = () => {
                     <i className='bx bx-envelope' />
                     <h3>Email Us</h3>
                     <p>
-                      info@example.com
+                      sambabhouria@gmail.com
                       <br />
                       contact@example.com
                     </p>
@@ -44,9 +44,9 @@ const Contact = () => {
                     <i className='bx bx-phone-call' />
                     <h3>Call Us</h3>
                     <p>
-                      +1 5589 55488 55
+                      06 78 32 90 35
                       <br />
-                      +1 6678 254445 41
+                      06 78 32 90 35
                     </p>
                   </div>
                 </Col>

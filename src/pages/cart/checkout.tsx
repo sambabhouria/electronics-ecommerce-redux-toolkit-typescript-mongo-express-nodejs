@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import DefaultLayout from '../../components/layouts/default-layout';
 import RedButton from '../../components/UI/red-button';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { reset } from '../../features/cart/cart-slice';
+import { reset } from '../../features/cart/cartSlice';
 import authAxios from '../../utils/auth-axios';
 import { setError } from '../../utils/error';
 import { formatCurrencry } from '../../utils/helper';

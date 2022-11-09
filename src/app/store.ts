@@ -5,19 +5,19 @@ import { configureStore,  ThunkAction, Action ,combineReducers } from '@reduxjs/
 import storage from 'redux-persist/lib/storage';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
-import cartSlice from '../features/cart/cart-slice';
-import { productListSlice } from '../features/products/slice-list';
+import cartSlice from '../features/cart/cartSlice';
+import { productListSlice } from '../features/products/productListSlice';
 
 import { persistStore, persistReducer } from 'redux-persist';
-import orderListSlice from '../features/orders/slice-list';
-import productDetailsSlice from '../features/products/slice-details';
-import loginSlice from '../features/users/login-slice';
+import orderListSlice from '../features/orders/listSlice';
+import productDetailsSlice from '../features/products/productDetailsSlice';
+import loginSlice from '../features/users/loginSlice';
 import { authorizationProvider } from '../utils/auth-axios';
-import userDetailsSlice from '../features/users/user-details';
-import userListSlice from '../features/users/user-list';
-import userOrderSlice from '../features/orders/user-orders';
-import orderDetailSlice from '../features/orders/order-details';
-import productFilterSlice from '../features/products/search-list';
+import userDetailsSlice from '../features/users/userDetailsSlice';
+import userListSlice from '../features/users/userListSlice';
+import userOrderSlice from '../features/orders/userOrderSlice';
+import orderDetailSlice from '../features/orders/orderDetailSlice';
+import productFilterSlice from '../features/products/productFilterSlice';
 import counterReducer from '../features/counter/counterSlice';
 
 

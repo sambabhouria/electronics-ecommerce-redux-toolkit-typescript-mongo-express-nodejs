@@ -9,7 +9,7 @@ import Loader from '../../../components/UI/loader';
 import Paginate from '../../../components/UI/paginate';
 import TableContainer from '../../../components/UI/table-contrainer';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
-import { getFilterProducts } from '../../../features/products/search-list';
+import { getFilterProducts } from '../../../features/products/productFilterSlice';
 import authAxios from '../../../utils/auth-axios';
 import { setError } from '../../../utils/error';
 import { formatCurrencry, getDate } from '../../../utils/helper';

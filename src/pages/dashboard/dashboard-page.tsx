@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import DashboardLayout from '../../components/layouts/dashboard-layout';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { getOrdersList } from '../../features/orders/slice-list';
+import { getOrdersList } from '../../features/orders/listSlice';
 import { formatCurrencry } from '../../utils/helper';
 
 const DashboardPage = () => {
